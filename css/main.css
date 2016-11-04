@@ -1,0 +1,46 @@
+html {
+    font-family: 'Hind', sans-serif;
+    background-image: url("../img/mixingdesk.jpeg");
+    background-size: cover;
+}
+
+/*hide the results and details by default*/
+#results, #details {
+    display: none;
+}
+
+
+section {
+    background: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    margin-top: 20px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px
+}
+
+/*select the image with id="logo"*/
+/*img #logo find an img, then inside it find another element with an id="logo"*/
+img#logo { 
+    margin: auto;
+    width: 30%;
+    display: block;  
+}
+
+select, button {
+    width: 100%;
+    background: white;
+    color: black;
+    font-size: 200%;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+    
+    
+
