@@ -1,7 +1,10 @@
 html {
     font-family: 'Hind', sans-serif;
-    background-image: url("../img/mixingdesk.jpeg");
+    color: white;
+    background-color: black;
+    background-image: url("../img/LaserBG.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /*hide the results and details by default*/
@@ -11,19 +14,21 @@ html {
 
 
 section {
-    background: rgba(255, 255, 255, 0.9);
+    background: #202021;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     max-width: 500px;
     padding: 20px;
-    border-radius: 10px
+    border-radius: 10px;
+    opacity: 0.9;
+        
 }
 
 /*select the image with id="logo"*/
 /*img #logo find an img, then inside it find another element with an id="logo"*/
 img#logo { 
     margin: auto;
-    width: 30%;
+    width: 70%;
     display: block;  
 }
 
