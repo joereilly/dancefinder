@@ -1,6 +1,8 @@
 // use jQuery to select the HTML elements we are going to manipulate //
 var homeGoButton = $('#home button')
-var homeDropdown = $('#home select')
+//var homeDropdown = $('#home select')
+var countryDropdown = $('#home select[name=country]')
+var decadeDropdown = $('#home select[name=decade]')
 var homeSection = $('#home')
 var resultsSection = $('#results')
 var resultsBackButton = $('#results .back')
@@ -14,14 +16,32 @@ var detailsBackButton = $('#details .back')
 homeGoButton.click(function(){
     
     // capture the user chosen option
-    var chosenOption = homeDropdown.val();
-    console.log("You picked: " + chosenOption)
+    var chosenCountry = countryDropdown.val();
+    var chosenDecade = decadeDropdown.val();
+//    console.log("You picked: " + chosenCountry + ' and ' + chosenDecade)
+    
+    // change the h1 in results
+    $('#results h1').html("Dance music from " + chosenCountry + ', released in the ' + chosenDecade)
+    
+    var filters =
+    [
+        {
+            key: 'country',
+            value: chosenCountry
+        },
+        {
+            key: 'decade',
+            value: chosenDecade
+            
+            
+        }
+    ]
     
     homeSection.hide()
     resultsSection.show()
     
      // filter+sort people by user selection
-    var resultsList = filterAndSortList(peopleList, chosenOption);
+    var resultsList = filterAndSortList(tracksList, filters);
     console.log(resultsList);
     
     // show the results in the #results section
@@ -61,6 +81,8 @@ detailsBackButton.click(function(){
     resultsSection.show()  
 
 })
+
+
 
 //
  

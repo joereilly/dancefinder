@@ -11,8 +11,10 @@ function makeListItemHTML (data, index)
 
   // li = List Item
   var li  = '<li id="' + index + '">'
-  + '<img src="' + data.image + '">' 
-  + '<h2>' + data.name + '</h2>' 
+  + '<img src="' + data.image + '" width="150" height="150">' 
+  + '<h2>' + data.track + '</h2>' 
+  + '<p>' + data.year + '<p>'
+  + '<p>' + data.genre + '<p>'
   + '</li>'
 
   return li;        
@@ -30,10 +32,14 @@ function makeDetailsHTML (data)
     <a class="contact button">Contact Matteo</a>
   */
 
-  var html = '<h2>' + data.name  + '</h2>' 
-  + '<img src="' + data.image + '">' 
-  + '<p>' + data.about + '</p>'
-  + '<a class="contact button">Contact ' + data.name + '</a>'
+  var html = '<h2>' + data.track  + '</h2>' 
+  + '<img src="' + data.image + '" width="500" height="500">' 
+  + '<p>' + data.year + '</p>'
+  + '<p>' + data.genre + '</p>'
+  + '<p>' + data.album + '</p>'
+  + '<p>' + data.label + '</p>'
+  + '<code>' + data.youtube + '</code>' 
+  
 
   return html;        
 }

@@ -4,27 +4,27 @@ console.log("firebase.js ready to roll")
 
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyDqCowWm_tfPP6BlQZIWiRCWzSwsD1dnFM",
-    databaseURL: "https://dynamic-web-template-e91d4.firebaseio.com"
+    apiKey: "AIzaSyCtZr3s2NB023qGk1KQwFondulrl0KP6n0",
+    databaseURL: "https://myapi-f31f5.firebaseio.com",
   };
   firebase.initializeApp(config);
 
 // this is the whole database
 var database = firebase.database();
 
-//we want to grab only the "people" part of the database
-var peopleData = database.ref('people');
+//we want to grab only the "track" part of the database
+var tracksData = database.ref('track');
 
 // create list of people
-var peopleList = []; //empty list, for now
+var tracksList = []; //empty list, for now
 
 // load all of the children of "people"
 // keep listening for new children
-peopleData.on('child_added', function(childData){
+tracksData.on('child_added', function(childData){
     // run these instructions for each child 
     console.table(childData.val() );
     var person = childData.val(); // extract data about the person
-    peopleList.push(person); // add the person to the people list
+    tracksList.push(person); // add the person to the people list
     
 })
 
