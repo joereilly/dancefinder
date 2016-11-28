@@ -8,14 +8,6 @@ html {
 }
 
 
-datalist#country {
-    width: 100%;
-    background: white;
-    color: black;
-    font-size: 200%;
-}
-
-
 /*hide the results and details by default*/
 #results, #details {
     display: none;
