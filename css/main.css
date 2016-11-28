@@ -7,6 +7,15 @@ html {
     background-attachment: fixed;
 }
 
+
+datalist#country {
+    width: 100%;
+    background: white;
+    color: black;
+    font-size: 200%;
+}
+
+
 /*hide the results and details by default*/
 #results, #details {
     display: none;
@@ -18,8 +27,13 @@ html {
     list-style: none;
 }
 
+#home {
+    margin-top: 90px;
+   
+}
+
 #results li {
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     margin-bottom: -1px;
     position: relative;
     overflow: hidden;
@@ -59,6 +73,8 @@ section {
     max-width: 500px;
     padding: 20px;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
         
 }
 
@@ -87,7 +103,7 @@ button {
     border-color: white;
 }
 
-.back button {
+.back-button {
     background: #424242;
     color: white;
     border: none;
@@ -110,5 +126,6 @@ p#checkboxes {
 p#results {
     text-align: ;
 }
+
 
 

@@ -34,10 +34,10 @@ function makeDetailsHTML (data)
 
   var html = '<h2>' + data.track  + '</h2>' 
   + '<img src="' + data.image + '" width="500" height="500">' 
-  + '<p>' + data.year + '</p>'
-  + '<p>' + data.genre + '</p>'
-  + '<p>' + data.album + '</p>'
-  + '<p>' + data.label + '</p>'
+  + '<p>' + "<b> Year:     </b>"  + data.year + '</p>'
+  + '<p>' + "<b>Genre:     </b>" + data.genre + '</p>'
+  + '<p>' + "<b> Album:     </b>"  + data.album + '</p>'
+  + '<p>' + "<b> Label:     </b>" + data.label + '</p>'
   + '<code>' + data.youtube + '</code>' 
   
 

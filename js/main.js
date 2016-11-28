@@ -5,11 +5,11 @@ var countryDropdown = $('#home select[name=country]')
 var decadeDropdown = $('#home select[name=decade]')
 var homeSection = $('#home')
 var resultsSection = $('#results')
-var resultsBackButton = $('#results .back')
+var resultsBackButton = $('#results .back-button')
 var resultsOL = $('#results ol');
 var detailsInfo = $('#details #info')
 var detailsSection = $('#details')
-var detailsBackButton = $('#details .back')
+var detailsBackButton = $('#details .back-button')
 
 //tell the button to do something when we click it
 

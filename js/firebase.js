@@ -5,7 +5,7 @@ console.log("firebase.js ready to roll")
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyCtZr3s2NB023qGk1KQwFondulrl0KP6n0",
-    authDomain: "myapi-f31f5.firebaseapp.com",
+    databaseURL: "https://myapi-f31f5.firebaseio.com",
   };
   firebase.initializeApp(config);
 
