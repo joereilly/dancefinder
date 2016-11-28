@@ -35,6 +35,7 @@ function makeDetailsHTML (data)
   var html = '<h2>' + data.track  + '</h2>' 
   + '<img src="' + data.image + '" width="500" height="500">' 
   + '<p>' + "<b> Year:     </b>"  + data.year + '</p>'
+  + '<p>' + "<b> Country:     </b>"  + data.country + '</p>'
   + '<p>' + "<b>Genre:     </b>" + data.genre + '</p>'
   + '<p>' + "<b> Album:     </b>"  + data.album + '</p>'
   + '<p>' + "<b> Label:     </b>" + data.label + '</p>'
