@@ -21,7 +21,7 @@ homeGoButton.click(function(){
 //    console.log("You picked: " + chosenCountry + ' and ' + chosenDecade)
     
     // change the h1 in results
-    $('#results h1').html("Dance music from " + chosenCountry + ', released in the ' + chosenDecade)
+    $('#results h1').html("Dance tracks from " + chosenCountry + ', released in the ' + chosenDecade)
     
     var filters =
     [
