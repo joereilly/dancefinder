@@ -96,8 +96,6 @@ button {
     border-style: solid;
     border-width: 2px;
     border-color: white;
-    -webkit-transition: width 2s, height 2s; /* Safari */
-    transition: width 2s, height 2s;
 }
 
 
